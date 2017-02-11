@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Techzone 2k17</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <script type="text/javascript" src="assets/scripts/particles.min.js"></script>
+
+    <style type="text/css" media="screen">
+ 
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#events" onclick="closeNav()">Events</a>
+            <a href="#conference" onclick="closeNav()">Conference</a>
+            <a href="#register" onclick="closeNav()">Register</a>
+            <a href="#co-ordinators" onclick="closeNav()">Co-Ordinators</a>
+            <a href="#contact_us" onclick="closeNav()">Contact us</a>
+        </div>
+    </div>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+
+        </div>
+
+        <div class="section " id="section1">
+
+            <div class="nav-menu" onclick="openNav()">&#9776;</div>
+
+        </div>
+
+        <div class="section" id="section2">
+
+            <div class="nav-menu" onclick="openNav()">&#9776; </div>
+
+        </div>
+
+        <div class="section " id="section3">
+
+            <div class="nav-menu" onclick="openNav()">&#9776;</div>
+
+            
+        </div>
+
+        <div class="section " id="section4">
+
+            <div class="nav-menu" onclick="openNav()">&#9776;</div>
+
+        </div>
+
+        <div class="section" id="section5">
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="assets/scripts/jquery.filterizr.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/parallax.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/eve.js"></script>
+
+
+
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                lockAnchors: false,
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#AC65C3', '#7B87BE'],
+                anchors: ['home', 'events', 'conference', 'register', 'co-ordinators', 'contact_us'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['HOME', 'EVENTS', 'CONFERENCE', 'REGISTER', 'CO-ODINATORS', 'CONTACT US'],
+                fitToSection: true,
+                menu: '#myNav',
+
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 1200,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: false, //default e true
+                resize: true,
+
+            });
+        })
+    </script>
+    
+
+</body>
+
+</html>
