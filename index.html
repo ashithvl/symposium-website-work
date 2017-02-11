@@ -55,7 +55,15 @@
             top: 150px;
             left: 150px;
         }
+
+        .fontz{
+            font-family: 'csfont';
+        }
         
+        #eeven{
+             font-family: 'csfont';
+        }
+
         #march {
             position: absolute;
             font-family: 'csft';
@@ -249,7 +257,110 @@
         </div>
         <div class="section " id="section1">
 
-            <div class="nav-menu" onclick="openNav()">&#9776;</div>
+            <section class="sf_container">
+                <ul id="sfscene" class="scene">
+
+                    <li class="layer" data-depth="0.05">
+                        <div class="sf_background"></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.09">
+                        <div class="sfpose"><img src="assets/img/sfpose.png" width="1550px" ; height="500px" ;></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.20">
+                        <div class="sfkick"><img src="assets/img/sffly.png" width="750px" ; height="500px" ;></div>
+                    </li>
+
+                </ul>
+
+                <div class="nav-menu" onclick="openNav()">&#9776;</div>
+
+                <div id="wrapper">
+
+                    <p class="tech" id="eeven">TECHNICAL</p>
+
+                    <ul id="movieposters">
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Iron Man 2" />
+                            <div class="movieinfo">
+                                <h3>Charta<br/>Presentation</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="The Last Airbender" />
+                            <div class="movieinfo">
+                                <h3>Bug<br/>Smash</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Tron Legacy" />
+                            <div class="movieinfo">
+                                <h3>Mock<br/>Colloquium</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="The Last Airbender" />
+                            <div class="movieinfo">
+                                <h3>Krazy<br/>Keyboarder</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Tron Legacy" />
+                            <div class="movieinfo">
+                                <h3>Insanis<br/>Games</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div id="wrapper">
+                    
+                    <p class="non_tech" id="eeven"></p>
+               
+                    <ul id="movieposters">
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Iron Man 2" />
+                            <div class="movieinfo">
+                                <h3>Fortitudo<br/>Hunt</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="The Last Airbender" />
+                            <div class="movieinfo">
+                                <h3>Connexio<br/>Adzap</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Tron Legacy" />
+                            <div class="movieinfo">
+                                <h3>Navis<br/> Wrek</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="The Last Airbender" />
+                            <div class="movieinfo">
+                                <h3>Vade<br/>Crazy</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/sffly.png" alt="Tron Legacy" />
+                            <div class="movieinfo">
+                                <h3>Special<br/>Events</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </section>
+
+
 
         </div>
 
@@ -517,10 +628,19 @@
                 // Pretty simple huh?
                 var scenes = document.getElementById('scenes');
                 var parallax = new Parallax(scenes);
+
+                // Pretty simple huh?
+                var sfscene = document.getElementById('sfscene');
+                var parallax =  new Parallax(sfscene, {
+                                      scalarX: 90,
+                                      originX: 1.0
+                                    });
             </script>
 
             <script>
                 $('#scene').parallax({});
+
+                $('#sfscene').parallax({});
 
                 $('#scenes').parallax({});
             </script>
@@ -537,6 +657,18 @@
                     0,
                     1,
                     'zoomIn'
+                );
+                $('.tech').switchText(['Technical'],
+                    20,
+                    1,
+                    1,
+                    'glitch'
+                );
+                $('.non_tech').switchText(['NON-Technical'],
+                    20,
+                    1,
+                    1,
+                    'glitch'
                 );
             </script>
             </script>
