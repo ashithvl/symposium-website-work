@@ -185,36 +185,25 @@ Snow starts */
 .tech{
     display: inline;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     font-family: fantasy;
     float: left;
-    padding: 40px;
+    padding-top: 150px;
+    padding-right: 20px;
+    padding-left: 20px; 
     margin: 20px 10px;
-    border: 5px solid rgba(255,255,255, 0.1);
-    -webkit-transform: rotateY(30deg);
-    -moz-box-shadow: 0 3px 10px #888;
-    -webkit-box-shadow: 0 3px 10px #888;
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: 0.5s;
 }
 
 .non_tech{
     display: inline;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-family: fantasy;
     float: left;
-    padding: 40px 10px; 
-    margin: 20px 10px;
-    border: 5px solid rgba(255,255,255, 0.1);
-    -webkit-transform: rotateY(30deg);
-    -moz-box-shadow: 0 3px 10px #888;
-    -webkit-box-shadow: 0 3px 10px #888;
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: 0.5s;
+    padding: 80px 10px;  
 }
 
 #movieposters li {
@@ -234,11 +223,8 @@ Snow starts */
 #movieposters li img {
     width: 200px;
     height: 220px;
-    border: 5px solid rgba(255,255,255, 0.3);
-    -webkit-transform: rotateY(30deg);
-    -moz-box-shadow: 0 3px 10px #888;
-    -webkit-box-shadow: 0 3px 10px #888;
-    -webkit-transition-property: transform;
+    -webkit-transform: translateZ(30px) rotateY(30deg);
+    -webkit-transition-property: transform, box-shadow, margin;
     -webkit-transition-duration: 0.5s;
 }
 
@@ -247,15 +233,14 @@ Snow starts */
 }
 
 .movieinfo {
-    border: 5px solid rgba(255,255,255, 0.3);
     padding: 20px 0px;
     width: 165px;
     height: 100px;  
     background-color: rgba(255,255,255, 0.3);
     margin: -50px 0 0 50px;
     position: absolute;
-    -moz-box-shadow: 0 20px 40px #888;
-    -webkit-box-shadow: 0 20px 40px #888;
+    -moz-box-shadow: 0 20px 40px #000;
+    -webkit-box-shadow: 0 20px 40px #000;
     -webkit-transform: translateZ(30px) rotateY(30deg);
     -webkit-transition-property: transform, box-shadow, margin;
     -webkit-transition-duration: 0.5s;
@@ -263,7 +248,7 @@ Snow starts */
 
 #movieposters li:hover .movieinfo {
     -webkit-transform: rotateY(0deg);
-    -webkit-box-shadow: 0 5px 10px #888;
+    -webkit-box-shadow: 0 5px 10px #000;
     margin: -50px 0 0 20px;
 }
 
@@ -490,6 +475,7 @@ Snow starts */
 
                                 .coc_background {
                                     background: url(../img/coc.png) no-repeat 100%;
+                                    opacity: 0.7;
                                     background-size: cover;
                                     width: 1500px;
                                     height: 700px;
@@ -507,8 +493,11 @@ Snow starts */
                                 }
 
                                 .cocbal {
-                                    top: 200px;
-                                    left: 220px;
+                                    opacity: 0.5;
+                                    width: 1550px;
+                                    height :700px;
+                                    left: -300px;
+                                    position: absolute;
                                 }
 
                                 .cocdra {
@@ -540,14 +529,13 @@ div#all {
 /* generic css */
 
 .view {
+  background: rgba(10, 10, 10, 0.7)
     margin-top: 20px;
     margin-left: 60px;
   float: left;
-  border: 5px solid #fff;
   overflow: hidden;
   position: relative;
-  text-align: center;
-  box-shadow: 1px 1px 2px #e6e6e6;
+  text-align: center; 
   cursor: default;
 }
 
@@ -666,6 +654,7 @@ div#all {
 
 
 .co-ordinators{
+  position: relative;
   color: #fff;
   padding-top: 30px;
   text-align: center;
