@@ -41,36 +41,6 @@
     <div id="fullpage">
         <div class="section" id="section0">
 
-
-
-            <section class="as_container">
-                <ul id="asscene" class="scene">
-
-                    <li class="layer" data-depth="0.1">
-                        <div class="as_background"></div>
-                    </li>
-                    
-                    <li class="layer" data-depth="0.15">
-                        <div class="asleftpose"><img src="assets/img/left.png" width="1000px" ; height="600px" ;></div>
-                    </li>
-
-                    <li class="layer" data-depth="0.15">
-                        <div class="asrightpose"><img src="assets/img/right.png" width="1000px" ; height="600px" ;></div>
-                    </li>
-
-                    <li class="layer" data-depth="0.1">
-                        <div class="cen"><img src="assets/img/1.png" width="1600px" ; height="750px" ;></div>
-                    </li>
-                </ul>
-
-                <div class="nav-menu" onclick="openNav()">&#9776;</div>
-
-            </section>
-
-
-
-
-
         </div>
 
         <div class="section " id="section1">
@@ -353,15 +323,15 @@
         })
     </script><script>
                 // Pretty simple huh?
-                var asscene = document.getElementById('asscene');
-                var parallax =  new Parallax(asscene, {
+                var cocscene = document.getElementById('cocscene');
+                var parallax =  new Parallax(cocscene, {
                                       scalarX: 90,
                                       originX: 1.0
                                     });
             </script>
 
             <script>
-                $('#asscene').parallax({});
+                $('#cocscene').parallax({});
             </script>
 
 

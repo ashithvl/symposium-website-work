@@ -414,6 +414,10 @@ Snow starts */
                                     top: 0;
                                 }
 
+                                .layer div {
+                                    position: absolute;
+                                }
+
                                 .angryBack {
                                     top: 200px;
                                     left: -100px;
@@ -423,6 +427,7 @@ Snow starts */
                                     top: 370px;
                                     left: 600px;
                                 }
+
 
                                 .sf_container {
                                     width: 100%;
@@ -499,42 +504,6 @@ Snow starts */
                                     top: 200px;
                                     left: 220px;
                                 }
-
-
-                                .as_container {
-                                    width: 100%;
-                                    height: 700px;
-                                    overflow: hidden;
-                                    position: relative;
-                                    background: #000;
-                                }
-
-                                .as_background {
-                                    background: url(../img/asback.png) no-repeat 100%;
-                                    background-size: cover;
-                                    width: 1550px;
-                                    height: 700px;
-                                    left: -150px;
-                                    top: 0px;
-                                }
-                                .asleftpose {
-                                    top: 120px;
-                                    left: 200px;
-                                }
-
-                                .asrightpose {
-                                    right: -1150px;
-                                    top: 130px;
-                                }
-
-                                .cen {
-                                    top: 0px;
-                                    left: -120px;
-                                }
-
-
-
-
 
 
 
