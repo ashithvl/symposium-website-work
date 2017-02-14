@@ -366,7 +366,30 @@
 
         <div class="section" id="section2">
 
-            <div class="nav-menu" onclick="openNav()">&#9776;</div>
+            
+            <section class="as_container">
+                <ul id="asscene" class="scene">
+
+                    <li class="layer" data-depth="0.1">
+                        <div class="as_background"></div>
+                    </li>
+                    
+                    <li class="layer" data-depth="0.15">
+                        <div class="asleftpose"><img src="assets/img/left.png" width="1000px" ; height="600px" ;></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.15">
+                        <div class="asrightpose"><img src="assets/img/right.png" width="1000px" ; height="600px" ;></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.1">
+                        <div class="cen"><img src="assets/img/1.png" width="1600px" ; height="750px" ;></div>
+                    </li>
+                </ul>
+
+                <div class="nav-menu" onclick="openNav()">&#9776;</div>
+
+            </section>
 
         </div>
 
@@ -519,10 +542,6 @@
                     <li class="layer" data-depth="0.20">
                         <div class="cocbal"><img src="assets/img/b.png" width="1850px" ; height="700px" ;></div>
                     </li>
-
-                 <!--    <li class="layer" data-depth="0.20">
-                        <div class="cocdra"><img src="assets/img/dra.png" width="750px" ; height="500px" ;></div>
-                    </li> -->
 
                     <li class="layer" data-depth="0.09">
                         <div class="cocpose"><img src="assets/img/barb.png" width="1000px" ; height="600px" ;></div>
@@ -756,9 +775,24 @@
                 scalarX: 90,
                 originX: 1.0
             });
+            var asscene = document.getElementById('asscene');
+                var parallax =  new Parallax(asscene, {
+                                      scalarX: 90,
+                                      originX: 1.0
+                                    });
         </script>
+        <script>
+                // Pretty simple huh?
+                
+            </script>
+
+            <script>
+                
+            </script>
 
         <script>
+            $('#asscene').parallax({});
+
             $('#scene').parallax({});
 
             $('#sfscene').parallax({});
