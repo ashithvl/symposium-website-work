@@ -365,7 +365,6 @@
         </div>
 
         <div class="section" id="section2">
-
             
             <section class="as_container">
                 <ul id="asscene" class="scene">
@@ -543,6 +542,10 @@
                         <div class="cocbal"><img src="assets/img/b.png" width="1850px" ; height="700px" ;></div>
                     </li>
 
+                 <!--    <li class="layer" data-depth="0.20">
+                        <div class="cocdra"><img src="assets/img/dra.png" width="750px" ; height="500px" ;></div>
+                    </li> -->
+
                     <li class="layer" data-depth="0.09">
                         <div class="cocpose"><img src="assets/img/barb.png" width="1000px" ; height="600px" ;></div>
                     </li>
@@ -624,9 +627,6 @@
                 </div>
 
             </div>
-
-
-
 
             </section>
 
@@ -775,23 +775,17 @@
                 scalarX: 90,
                 originX: 1.0
             });
+             // Pretty simple huh?
             var asscene = document.getElementById('asscene');
-                var parallax =  new Parallax(asscene, {
-                                      scalarX: 90,
-                                      originX: 1.0
-                                    });
-        </script>
+            var parallax =  new Parallax(asscene, {
+                                  scalarX: 90,
+                                  originX: 1.0
+                                });
+    </script>
+                   
+               
         <script>
-                // Pretty simple huh?
-                
-            </script>
-
-            <script>
-                
-            </script>
-
-        <script>
-            $('#asscene').parallax({});
+             $('#asscene').parallax({});
 
             $('#scene').parallax({});
 
